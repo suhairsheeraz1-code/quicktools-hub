@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #2563eb;
+    color: white;
+}
+header h1 {
+    font-size: 46px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+header p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.tool {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.tool h3 {
+    font-size: 22px;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#result {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+/* Mobile-friendly design */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 35px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main h2 {
+        font-size: 28px;
+        margin-left: 15px;
+    }
+
+    .tools {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    .tool {
+        width: 100%;
+    }
+
+    .tool input,
+    .tool textarea {
+        width: 90%;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #toolSearch {
+        width: 90%;
+        margin: 10px auto 20px;
+        display: block;
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+/* Dark Mode */
+
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .tool {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode header {
+    background: #111827;
+}
+
+.dark-mode footer {
+    color: white;
+}
+/* Professional Tool Cards */
+
+.tool {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tool:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tool input,
+.tool select,
+.tool textarea {
+    padding: 10px;
+    margin: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.tool textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.tool button {
+    margin: 5px;
+}
+/* Professional Search Box */
+
+#toolSearch {
+    display: block;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto 30px;
+    padding: 14px 18px;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+#toolSearch:focus {
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+/* Professional Buttons */
+
+button {
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+/* Tool Section */
+
+main h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+/* Professional Footer */
+
+footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+/* About Section */
+
+.about {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 17px;
+    line-height: 1.6;
+}

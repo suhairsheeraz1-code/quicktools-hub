@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickTools Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>⚡ QuickTools Hub</h1>
+        <p>Free and simple online tools</p>
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <h2>Our Tools</h2>
+        <input
+    type="text"
+    id="toolSearch"
+    placeholder="🔎 Search for a tool..."
+    onkeyup="searchTools()"
+>
+
+        <div class="tools">
+
+            <div class="tool">
+    <h3>🔢 Percentage Calculator</h3>
+    <p>Calculate percentages quickly.</p>
+
+    <input type="number" id="number" placeholder="Enter number">
+
+    <input type="number" id="percentage" placeholder="Enter percentage">
+
+    <button onclick="calculatePercentage()">Calculate</button>
+
+    <p id="percentageResult"></p>
+</div>
+
+            <div class="tool">
+    <h3>📝 Word Counter</h3>
+    <p>Count words and characters.</p>
+
+    <textarea id="textInput" placeholder="Type or paste your text here"></textarea>
+
+    <button onclick="countWords()">Count</button>
+
+    <p id="counterResult"></p>
+</div>
+
+<div class="tool">
+    <h3>🔐 Password Generator</h3>
+    <p>Create a random password.</p>
+
+    <input type="number" id="passwordLength" value="12" min="4" max="30">
+
+    <button onclick="generatePassword()">Generate Password</button>
+
+    <p id="passwordResult"></p>
+    <button onclick="copyPassword()">📋 Copy Password</button>
+</div>
+<div class="tool">
+    <h3>🎂 Age Calculator</h3>
+    <p>Calculate your age from your date of birth.</p>
+
+    <input type="date" id="birthDate">
+
+    <button onclick="calculateAge()">Calculate Age</button>
+
+    <p id="ageResult"></p>
+    
+</div>
+<div class="tool">
+    <h3>🔢 Unit Converter</h3>
+    <p>Convert kilometers to miles.</p>
+
+    <input type="number" id="kilometers" placeholder="Enter kilometers">
+
+    <button onclick="convertKilometers()">Convert</button>
+
+    <p id="conversionResult"></p>
+</div>
+<div class="tool">
+    <h3>⏱️ Stopwatch</h3>
+    <p>Use this simple stopwatch.</p>
+
+    <p id="stopwatchDisplay">00:00:00</p>
+
+    <button onclick="startStopwatch()">▶️ Start</button>
+    <button onclick="stopStopwatch()">⏸️ Stop</button>
+    <button onclick="resetStopwatch()">🔄 Reset</button>
+</div>
+<div class="tool">
+    <h3>🧮 Calculator</h3>
+    <p>Perform basic calculations.</p>
+
+    <input type="number" id="calcNumber1" placeholder="First number">
+
+    <select id="calcOperator">
+        <option value="+">➕ Add</option>
+        <option value="-">➖ Subtract</option>
+        <option value="*">✖️ Multiply</option>
+        <option value="/">➗ Divide</option>
+    </select>
+
+    <input type="number" id="calcNumber2" placeholder="Second number">
+
+    <button onclick="calculateResult()">Calculate</button>
+    <button onclick="clearCalculator()">🧹 Clear</button>
+
+    <p id="calculatorResult"></p>
+</div>
+<div class="tool">
+    <h3>📅 Date Difference</h3>
+    <p>Find the number of days between two dates.</p>
+
+    <input type="date" id="date1">
+    <input type="date" id="date2">
+
+    <button onclick="calculateDateDifference()">Calculate</button>
+
+    <p id="dateDifferenceResult"></p>
+</div>
+
+        </div>
+
+        <div id="result"></div>
+    </main>
+<section class="about">
+    <h2>About QuickTools Hub</h2>
+    <p>
+        QuickTools Hub provides simple, free online tools
+        for everyday tasks.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 QuickTools Hub</p>
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
